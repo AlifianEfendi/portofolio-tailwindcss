@@ -5,3 +5,42 @@ html {
 header {
     background: rgb(17, 24, 39,.7);
 }
+
+nav.nav a.active {
+    background-color: rgb(243 244 246);
+    color: rgb(55 65 81);
+}
+
+@media(max-width:640px) { /* Small Responsive */
+    header {
+        background:rgb(31 41 55);
+    }
+
+    .bars {
+        transition: .3s;
+    }
+
+    .bars.active {
+        transform: rotate(-90deg);
+    }
+
+    nav.nav {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background: rgb(55 65 81);
+        min-width: 12rem;
+        transition: .3s;
+        height: 100vh;
+        right: -12rem;
+        top: 100%;
+    }
+    
+    nav.nav.active {
+        right: 0;
+    }
+
+    #about img {
+        max-width: 230px;
+    }
+}

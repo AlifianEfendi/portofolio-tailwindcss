@@ -15,55 +15,46 @@
         <div class="md:flex md:items-center md:gap-12">
           <a class="block text-teal-600" href="#">
             <span class="sr-only">Home</span>
-            <img src="images/logo.png" width="60px" alt="">
+            <img src="images/logo.png" class="h-14 sm:h-16" alt="">
           </a>
         </div>
 
         <div>
-          <div class="sm:hidden">
-            <label for="Tab" class="sr-only">Tab</label>
 
-            <select id="Tab" class="w-full rounded-md border-gray-200">
-              <option select>Home</option>
-              <option>About</option>
-              <option>Portofolio</option>
-              <option>Contact</option>
-            </select>
-          </div>
+        <label for="Tab" class="sr-only">Tab</label>
+        <nav class="nav flex gap-4" aria-label="Tabs">
+          <a
+            href="#home"
+            class="active shrink-0 rounded-lg p-2 px-4 text-sm font-medium text-gray-400 hover:bg-gray-50 hover:text-gray-700"
+          >
+            Home
+          </a>
 
-          <div class="hidden sm:block">
-            <nav class="flex gap-4" aria-label="Tabs">
-              <a
-                href="#home"
-                class="shrink-0 rounded-lg bg-gray-100 p-2 px-4 text-sm font-medium text-gray-700"
-              >
-                Home
-              </a>
+          <a
+            href="#about"
+            class="shrink-0 rounded-lg p-2 px-4 text-sm font-medium text-gray-400 hover:bg-gray-50 hover:text-gray-700"
+          >
+            About
+          </a>
 
-              <a
-                href="#about"
-                class="shrink-0 rounded-lg p-2 px-4 text-sm font-medium text-gray-400 hover:bg-gray-50 hover:text-gray-700"
-              >
-                About
-              </a>
+          <a
+            href="#portofolio"
+            class="shrink-0 rounded-lg p-2 px-4 text-sm font-medium text-gray-400 hover:bg-gray-50 hover:text-gray-700"
+          >
+            Portofolio
+          </a>
 
-              <a
-                href="#portofolio"
-                class="shrink-0 rounded-lg p-2 px-4 text-sm font-medium text-gray-400 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Portofolio
-              </a>
-
-              <a
-                href="#contact"
-                class="shrink-0 rounded-lg p-2 px-4 text-sm font-medium text-gray-400 hover:bg-gray-50 hover:text-gray-700"
-                aria-current="page"
-              >
-                Contact
-              </a>
-            </nav>
-          </div>
-        </div>
+          <a
+            href="#contact"
+            class="shrink-0 rounded-lg p-2 px-4 text-sm font-medium text-gray-400 hover:bg-gray-50 hover:text-gray-700"
+            aria-current="page"
+          >
+            Contact
+          </a>
+        </nav>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bars size-6 text-white cursor-pointer sm:hidden">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>        
       </div>
     </div>
   </header>
@@ -76,14 +67,13 @@
         <h1
           class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl text-transparent sm:text-5xl"
         >
-          Welcome to my <span class="font-bold">Portofolio</span>.
+          Hi, I'm <span class="font-bold">AlifianEffendi</span>.
 
-          <span class="sm:block"> Lorem <span class="font-bold">ipsum</span>. </span>
+          <span class="sm:block"> Web <span class="font-bold">Developer</span>. </span>
         </h1>
 
         <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus
-          numquam ea!
+          Front End Developer | Data Analyst.
         </p>
 
         <div class="mt-8 flex flex-wrap justify-center gap-4">
@@ -100,17 +90,17 @@
   <!-- !CTA's Section End -->
 
   <!-- !About Section -->
-  <section id="about" class="overflow-hidden bg-gray-800 flex flex-col-reverse sm:grid sm:grid-cols-2 py-14">
+  <section id="about" class="overflow-hidden bg-gray-800 flex items-center flex-col-reverse sm:flex-row sm:justify-evenly py-14">
     <div class="p-8 md:p-12 lg:px-16 lg:py-24">
       <div 
           data-aos="fade-up-right"
           data-aos-duration="800"
           class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-        <h2 class="text-2xl font-bold text-gray-50 md:text-3xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit
+        <h2 class="text-2xl font-bold text-gray-50 sm:text-3xl">
+          ABOUT ME
         </h2>
 
-        <p class="text-gray-400 mt-4 md:mt-6">
+        <p class="text-gray-400 sm:text-lg mt-4 sm:mt-6 sm:px-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
           sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
           quisque ut interdum tincidunt duis.
@@ -122,8 +112,8 @@
       alt=""
       data-aos="fade-up-left"
       data-aos-duration="800"
-      src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-      class="h-56 w-full object-cover sm:h-full"
+      src="images/profile.jpg"
+      class="w-auto object-cover mx-20 sm:mx-0 sm:w-2/6"
     />
   </section>
   <!-- !About Section End -->
@@ -132,7 +122,7 @@
   <section id="portofolio" class="bg-gray-900 text-white py-10">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
       <div data-aos="fade-down" class="mx-auto max-w-lg text-center">
-        <h2 class="text-3xl font-bold sm:text-4xl">Kickstart your marketing</h2>
+        <h2 class="text-2xl font-bold sm:text-3xl">PORTOFOLIO</h2>
 
         <p class="mt-4 text-gray-300">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquam doloribus
@@ -144,12 +134,12 @@
         <a
           data-aos="fade-down"
           data-aos-duration="400"
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-indigo-700/10 hover:shadow-indigo-700/10"
           href="#"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="size-10 text-pink-500"
+            class="size-10 text-indigo-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -177,12 +167,12 @@
         <a
           data-aos="fade-down"
           data-aos-duration="700"
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-indigo-700/10 hover:shadow-indigo-700/10"
           href="#"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="size-10 text-pink-500"
+            class="size-10 text-indigo-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -210,12 +200,12 @@
         <a
           data-aos="fade-down"
           data-aos-duration="900"
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-indigo-700/10 hover:shadow-indigo-700/10"
           href="#"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="size-10 text-pink-500"
+            class="size-10 text-indigo-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -243,12 +233,12 @@
         <a
           data-aos="fade-down"
           data-aos-duration="400"
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-indigo-700/10 hover:shadow-indigo-700/10"
           href="#"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="size-10 text-pink-500"
+            class="size-10 text-indigo-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -276,12 +266,12 @@
         <a
           data-aos="fade-down"
           data-aos-duration="700"
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-indigo-700/10 hover:shadow-indigo-700/10"
           href="#"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="size-10 text-pink-500"
+            class="size-10 text-indigo-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -309,12 +299,12 @@
         <a
           data-aos="fade-down"
           data-aos-duration="900"
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-indigo-700/10 hover:shadow-indigo-700/10"
           href="#"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="size-10 text-pink-500"
+            class="size-10 text-indigo-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -343,7 +333,7 @@
       <div class="mt-12 text-center">
         <a
           href="#"
-          class="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
+          class="inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
         >
           Get Started Today
         </a>
@@ -360,16 +350,19 @@
           data-aos-duration="800"
           class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
         <div class="lg:col-span-2 lg:py-12">
+          <H1 class="text-gray-50 text-3xl font-bold sm:text-3xl">
+            CONTACT ME
+          </H1>
           <p class="max-w-xl text-lg text-gray-300">
             At the same time, the fact that we are wholly owned and totally independent from
             manufacturer and other group control gives you confidence that we will only recommend what
             is right for you.
           </p>
 
-          <div class="mt-8">
-            <a href="#" class="text-2xl italic font-bold text-blue-300"> 0151 475 4450 </a>
+          <div class="mt-2">
+            <a href="#" class="text-2xl italic font-bold text-indigo-600"> 0838-6998-8795 </a>
 
-            <address class="mt-2 not-italic text-gray-300">282 Kevin Brook, Imogeneborough, CA 58517</address>
+            <address class="mt-2 not-italic text-gray-300">Alifian Effendi , Jakarta Selatan 12620</address>
           </div>
         </div>
 
@@ -378,10 +371,11 @@
             <div>
               <label class="sr-only" for="name">Name</label>
               <input
-                class="w-full rounded-lg border-2 bg-gray-50 p-3 text-sm"
+                class="w-full rounded-lg border-2 bg-gray-50 p-3 text-sm outline-none shadow-md valid:shadow-indigo-700/50 focus:shadow-indigo-700/50"
                 placeholder="Name"
                 type="text"
                 id="name"
+                required
               />
             </div>
 
@@ -389,20 +383,22 @@
               <div>
                 <label class="sr-only" for="email">Email</label>
                 <input
-                  class="w-full rounded-lg border-2 bg-gray-50 p-3 text-sm"
+                  class="w-full rounded-lg border-2 bg-gray-50 p-3 text-sm outline-none shadow-md valid:shadow-indigo-700/50 focus:shadow-indigo-700/50"
                   placeholder="Email address"
                   type="email"
                   id="email"
+                  required
                 />
               </div>
 
               <div>
                 <label class="sr-only" for="phone">Phone</label>
                 <input
-                  class="w-full rounded-lg border-2 bg-gray-50 p-3 text-sm"
+                  class="w-full rounded-lg border-2 bg-gray-50 p-3 text-sm outline-none shadow-md valid:shadow-indigo-700/50 focus:shadow-indigo-700/50"
                   placeholder="Phone Number"
                   type="tel"
                   id="phone"
+                  required
                 />
               </div>
             </div>
@@ -411,17 +407,18 @@
               <label class="sr-only" for="message">Message</label>
 
               <textarea
-                class="w-full rounded-lg border-2 bg-gray-50 p-3 text-sm"
+                class="w-full rounded-lg border-2 bg-gray-50 p-3 text-sm outline-none shadow-md valid:shadow-indigo-700/50 focus:shadow-indigo-700/50"
                 placeholder="Message"
                 rows="8"
                 id="message"
+                required
               ></textarea>
             </div>
 
             <div class="mt-4">
               <button
                 type="submit"
-                class="inline-block w-full rounded-lg bg-gray-800 px-5 py-3 font-medium text-white sm:w-auto"
+                class="inline-block w-full rounded-lg bg-indigo-800 px-5 py-3 font-medium text-white outline-indigo-400 sm:w-auto"
               >
                 Send Enquiry
               </button>
@@ -439,12 +436,12 @@
       <div class="sm:flex sm:items-center sm:justify-between">
         <div 
             class="flex justify-center text-teal-600 sm:justify-start">
-          <img src="images/logo.png" width="70px" alt="">
+          <img src="images/logo.png" class="h-14 sm:h-16" alt="">
         </div>
   
         <p 
             class="mt-4 text-center text-sm text-gray-300 lg:mt-0 lg:text-right">
-          Copyright &copy; 2022. All rights reserved.
+          Copyright &copy; Create by <span class="text-indigo-500">Alifianefndi</span> 2024. All rights reserved.
         </p>
       </div>
     </div>
@@ -452,8 +449,7 @@
   <!-- !Footer End -->
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
+  <script src="js/script.js">
   </script>
 </body>
 </html>
